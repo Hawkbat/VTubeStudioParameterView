@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/VTubeStudioParameterView/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/VTubeStudioParameterView/static/js/main.1c78a015.chunk.js",
-    "main.js.map": "/VTubeStudioParameterView/static/js/main.1c78a015.chunk.js.map",
+    "main.js": "/VTubeStudioParameterView/static/js/main.affc8ae6.chunk.js",
+    "main.js.map": "/VTubeStudioParameterView/static/js/main.affc8ae6.chunk.js.map",
     "runtime-main.js": "/VTubeStudioParameterView/static/js/runtime-main.e95822ab.js",
     "runtime-main.js.map": "/VTubeStudioParameterView/static/js/runtime-main.e95822ab.js.map",
-    "static/js/2.f51b1a17.chunk.js": "/VTubeStudioParameterView/static/js/2.f51b1a17.chunk.js",
-    "static/js/2.f51b1a17.chunk.js.map": "/VTubeStudioParameterView/static/js/2.f51b1a17.chunk.js.map",
+    "static/js/2.4136ecfe.chunk.js": "/VTubeStudioParameterView/static/js/2.4136ecfe.chunk.js",
+    "static/js/2.4136ecfe.chunk.js.map": "/VTubeStudioParameterView/static/js/2.4136ecfe.chunk.js.map",
     "static/js/3.eaad6d49.chunk.js": "/VTubeStudioParameterView/static/js/3.eaad6d49.chunk.js",
     "static/js/3.eaad6d49.chunk.js.map": "/VTubeStudioParameterView/static/js/3.eaad6d49.chunk.js.map",
     "index.html": "/VTubeStudioParameterView/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/VTubeStudioParameterView/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.f51b1a17.chunk.js.LICENSE.txt": "/VTubeStudioParameterView/static/js/2.f51b1a17.chunk.js.LICENSE.txt"
+    "static/js/2.4136ecfe.chunk.js.LICENSE.txt": "/VTubeStudioParameterView/static/js/2.4136ecfe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e95822ab.js",
-    "static/js/2.f51b1a17.chunk.js",
+    "static/js/2.4136ecfe.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.1c78a015.chunk.js"
+    "static/js/main.affc8ae6.chunk.js"
   ]
 }
