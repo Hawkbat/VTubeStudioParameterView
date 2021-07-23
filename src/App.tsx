@@ -10,6 +10,7 @@ function round(n: number): number {
 function App() {
   const [connected, setConnected] = useState(false)
   const [parameters, setParameters] = useState<ILive2DParameter[] | null>()
+  const [error, setError] = useState('')
 
   useEffect(() => {
     const TOKEN_KEY = 'vtstudio-parameter-view-token'
@@ -27,8 +28,9 @@ function App() {
       try {
         const { modelLoaded, parameters } = await plugin.apiClient.live2DParameterList()
         setParameters(modelLoaded ? parameters : null)
+        setError('')
       } catch (e) {
-        console.log(e)
+        setError('' + e)
       }
       requestAnimationFrame(f)
     }
@@ -42,15 +44,15 @@ function App() {
 
   return (
     <div className="App">
-      {connected ? <div style={{ display: 'grid', gridTemplateColumns: 'auto 60px 1fr 60px 60px' }}>
+      {connected && !error ? <div style={{ display: 'grid', gridTemplateColumns: 'auto 60px 1fr 60px 60px' }}>
         {parameters ? parameters.map(p => <Fragment key={p.name}>
           <div>{p.name}</div>
           <div>{round(p.min)}</div>
           <input type="range" min={p.min} max={p.max} step="any" value={round(p.value)} />
           <div>{round(p.max)}</div>
           <div>{round(p.value)}</div>
-        </Fragment>) : <i>No model loaded.</i>}
-      </div> : <i>Not connected to VTube Studio.</i>
+        </Fragment>) : <i>No model is currently loaded. Load a model to view Live2D parameters.</i>}
+      </div> : <i title={error}>Not connected to VTube Studio. Ensure that you are running the latest version of the VTube Studio beta on the same device as this webpage.</i>
       }
     </div >
   )
