@@ -46,7 +46,7 @@ function App() {
         {parameters ? parameters.map(p => <Fragment key={p.name}>
           <div>{p.name}</div>
           <div>{round(p.min)}</div>
-          <input type="range" min={p.min} max={p.max} value={round(p.value)} />
+          <input type="range" min={p.min} max={p.max} step="any" value={round(p.value)} />
           <div>{round(p.max)}</div>
           <div>{round(p.value)}</div>
         </Fragment>) : <i>No model loaded.</i>}
